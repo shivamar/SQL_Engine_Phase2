@@ -1,0 +1,19 @@
+Global Variables
+----------------
+Give arguments for main in this format: 
+--data data <directory to the path where query files exist/TABLE01.SQL> <directory to the path where query files exist/table02.sql>
+ 
+1. 	static HashMap<String, ArrayList<HashMap<?,?>>> tableMappings = new HashMap<String, ArrayList<HashMap<?,?>>>();
+	/* 
+	 *   tableMappings : {tableName : [ {ColumnIndex : ColumnType}, { ColumnName : ColumnIndex}]}
+	 *   first hashMap (indexDataTypeMap) -  used in Scan Operators too get the data Type given the index number from iterating data files
+	 *   second HashMap (nameIndex)  - for future use guess will be needed in Projection , Selection - use  
+	 */
+	 
+2.  
+3.
+4. Use this test method to print the output of each operator.readOneTuple().
+	
+	Method:Static method printTuple(Datum[]) 
+	Usage: Main.printTuple(current.readOneTuple());	// to remove @TODO @shiva
+	Location: Main.java	
